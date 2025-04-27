@@ -1,0 +1,449 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: #f8faf9;
+  color: #181818;
+  line-height: 1.6;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  z-index: 100;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #1a3c6b;
+}
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #1a3c6b;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.nav-links a:hover {
+  color: #f57c00;
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background: #1a3c6b;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+/* Hero Section */
+.hero {
+  background: #f8faf9;
+  padding: 60px 0 40px 0;
+}
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.hero-text {
+  flex: 1;
+}
+.hero-text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #181818;
+  margin-bottom: 1rem;
+}
+.hero-text p {
+  font-size: 1.2rem;
+  color: #333;
+}
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.hero-image img {
+  max-width: 440px;
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(26,60,107,0.08);
+}
+
+/* Vision Section */
+.vision-section {
+  background: #fff;
+  padding: 60px 0 40px 0;
+}
+.vision-grid {
+  display: flex;
+  gap: 60px;
+  justify-content: space-between;
+}
+.vision-grid h2 {
+  font-size: 2rem;
+  color: #181818;
+  margin-bottom: 1rem;
+}
+.vision-grid h3 {
+  font-size: 1.1rem;
+  color: #1a3c6b;
+  margin: 1.2rem 0 0.5rem 0;
+}
+.vision-grid ul {
+  margin-left: 1.2rem;
+  color: #333;
+}
+
+/* Urgence Section */
+.urgence-section {
+  background: #f8faf9;
+  padding: 60px 0 40px 0;
+}
+.urgence-section h2 {
+  text-align: center;
+  color: #181818;
+  margin-bottom: 2rem;
+}
+.urgence-steps {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.step {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(26,60,107,0.06);
+  flex: 1;
+  padding: 2rem 1.2rem;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.step:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 6px 24px rgba(26,60,107,0.12);
+}
+.step .icon img {
+  width: 58px;
+  max-width: 58px;
+  margin-bottom: 1rem;
+}
+.step h3 {
+  color: #1a3c6b;
+  margin-bottom: 0.5rem;
+}
+
+/* Distinction Section */
+.distinction-section {
+  background: #fff;
+  padding: 60px 0 40px 0;
+}
+.distinction-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.distinction-items {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 2rem;
+}
+.distinction-item {
+  background: #f8faf9;
+  border-radius: 14px;
+  padding: 1.5rem 1.2rem;
+  min-width: 220px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(26,60,107,0.04);
+}
+.distinction-diagram img {
+  width: 220px;
+  margin-top: 1.5rem;
+}
+
+/* Expansion Section */
+.expansion-section {
+  background: #f8faf9;
+  padding: 60px 0 40px 0;
+}
+.expansion-grid {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.expansion-text {
+  flex: 1.2;
+}
+.expansion-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.expansion-image img {
+  max-width: 440px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(26,60,107,0.08);
+}
+
+/* Certifications Section */
+.certifications-section {
+  background: #fff;
+  padding: 60px 0 40px 0;
+}
+.certifications-grid {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.certifications-image img {
+  max-width: 340px;
+  width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px rgba(26,60,107,0.08);
+}
+.certifications-text {
+  flex: 1.5;
+}
+.certification-list {
+  display: flex;
+  gap: 24px;
+  margin-top: 1.5rem;
+}
+.certification-item {
+  background: #f8faf9;
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  min-width: 140px;
+  box-shadow: 0 2px 8px rgba(26,60,107,0.04);
+}
+.certification-item h3 {
+  color: #1a3c6b;
+  margin-bottom: 0.3rem;
+}
+
+/* Bénéficiaires Section */
+.beneficiaires-section {
+  background: #1a3c6b;
+  color: #fff;
+  padding: 60px 0 40px 0;
+}
+.beneficiaires-grid h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.beneficiaires-list {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+.beneficiaire-item {
+  background: #fff;
+  color: #181818;
+  border-radius: 14px;
+  padding: 1.5rem 1.2rem;
+  min-width: 200px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(26,60,107,0.04);
+}
+.beneficiaire-item img {
+  width: 100%;
+  max-width: 216px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.beneficiaire-item h3 {
+  color: #1a3c6b;
+  margin-bottom: 0.3rem;
+}
+
+/* Urgence Section 2 */
+.urgence2-section {
+  background: #181818;
+  color: #fff;
+  padding: 60px 0 40px 0;
+}
+.urgence2-grid h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.urgence2-list {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+.urgence2-item {
+  background: #23272f;
+  border-radius: 14px;
+  padding: 1.5rem 1.2rem;
+  min-width: 200px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(26,60,107,0.04);
+}
+.urgence2-item img {
+  width: 100%;
+  max-width: 216px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.urgence2-item h3 {
+  color: #f57c00;
+  margin-bottom: 0.3rem;
+}
+
+/* Méthode Section */
+.methode-section {
+  background: #f8faf9;
+  padding: 60px 0 40px 0;
+}
+.methode-grid h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.methode-list {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+.methode-item {
+  background: #fff;
+  border-radius: 14px;
+  padding: 1.5rem 1.2rem;
+  min-width: 200px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(26,60,107,0.04);
+}
+.methode-item img {
+  width: 100%;
+  max-width: 216px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.methode-item h3 {
+  color: #1a3c6b;
+  margin-bottom: 0.3rem;
+}
+
+/* CTA Section */
+.cta-section {
+  background: #fff;
+  padding: 60px 0 40px 0;
+}
+.cta-grid {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.cta-image img {
+  max-width: 440px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(26,60,107,0.08);
+}
+.cta-text h2 {
+  color: #181818;
+  margin-bottom: 1rem;
+}
+.cta-text p {
+  color: #333;
+}
+
+/* Footer */
+.footer {
+  background: #fff;
+  padding: 1.2rem 0;
+  text-align: center;
+  color: #181818;
+  font-size: 1rem;
+  border-top: 1px solid #e0e0e0;
+}
+.footer-brand {
+  color: #1a3c6b;
+  font-weight: 700;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .hero-content, .vision-grid, .expansion-grid, .certifications-grid, .cta-grid {
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+  }
+  .distinction-items, .beneficiaires-list, .urgence-steps, .urgence2-list, .methode-list {
+    flex-direction: column;
+    gap: 24px;
+    align-items: stretch;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 98%;
+    padding: 0 8px;
+  }
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    right: -100vw;
+    background: #fff;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 220px;
+    height: calc(100vh - 70px);
+    box-shadow: -2px 0 12px rgba(26,60,107,0.08);
+    padding: 2rem 1.5rem;
+    transition: right 0.3s;
+    z-index: 200;
+  }
+  .nav-links.open {
+    right: 0;
+  }
+  .hamburger {
+    display: flex;
+  }
+}
+@media (max-width: 600px) {
+  .hero-text h1 {
+    font-size: 1.3rem;
+  }
+  .vision-grid h2, .expansion-text h2, .certifications-text h2, .beneficiaires-grid h2, .urgence2-grid h2, .methode-grid h2, .cta-text h2 {
+    font-size: 1.2rem;
+  }
+  .logo {
+    font-size: 1.1rem;
+  }
+  .cta-image img, .expansion-image img, .hero-image img {
+    max-width: 100%;
+  }
+} 
